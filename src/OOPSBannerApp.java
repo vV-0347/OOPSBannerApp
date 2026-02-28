@@ -2,17 +2,60 @@ public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        System.out.println(createLine("*","*","*","*","*","   ","*","*","*","*","*","   ","*","*","*","*","*","   ","*","*","*","*","*"));
-        System.out.println(createLine("*","       ","*","   ","*","       ","*","   ","*","       ","*","   ","*","       ","*"));
-        System.out.println(createLine("*","       ","*","   ","*","       ","*","   ","*","       ","*","   ","*","       ","*"));
-        System.out.println(createLine("*","       ","*","   ","*","*","*","*","*","   ","*","*","*","*","*","   ","*","*","*","*","*"));
-        System.out.println(createLine("*","       ","*","   ","*","       ","   ","*","       ","   ","*","       ","*"));
-        System.out.println(createLine("*","       ","*","   ","*","       ","   ","*","       ","   ","*","       ","*"));
-        System.out.println(createLine("*","*","*","*","*","   ","*","*","*","*","*","   ","*","       ","   ","*","*","*","*","*"));
-    }
+        String[] banner = {
 
-    // Reusable method using String.join()
-    public static String createLine(String... parts) {
-        return String.join("", parts);
+            String.join("   ",
+                "  *****  ",
+                "  *****  ",
+                " ******  ",
+                " ******   "
+            ),
+
+            String.join("   ",
+                " **   ** ",
+                " **   ** ",
+                " **   ** ",
+                " **      "
+            ),
+
+            String.join("   ",
+                " **   ** ",
+                " **   ** ",
+                " **   ** ",
+                " **      "
+            ),
+
+            String.join("   ",
+                " **   ** ",
+                " **   ** ",
+                " ******  ",
+                "  *****  "
+            ),
+
+            String.join("   ",
+                " **   ** ",
+                " **   ** ",
+                " **      ",
+                "     **  "
+            ),
+
+            String.join("   ",
+                " **   ** ",
+                " **   ** ",
+                " **      ",
+                "     **  "
+            ),
+
+            String.join("   ",
+                "  *****  ",
+                "  *****   ",
+                "**      ",
+                " ******  "
+            )
+        };
+
+        for (String line : banner) {
+            System.out.println(line);
+        }
     }
 }
